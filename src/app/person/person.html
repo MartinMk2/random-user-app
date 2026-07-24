@@ -1,0 +1,13 @@
+<div class="container" *ngIf="user">
+  <h1>Datos del Perfil</h1>
+
+  <div class="profile-card">
+    <img [src]="user.picture.large" alt="Profile Picture" class="avatar">
+
+    <div class="info">
+      <h2>{{ user.name.first }} {{ user.name.last }}</h2>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>País:</strong> {{ user.location.country }}</p>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,10 @@
 import { Component, signal } from '@angular/core';
+import { PersonComponent } from './person/person';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [PersonComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('random-user-app');
-}
+export class AppComponent { }
